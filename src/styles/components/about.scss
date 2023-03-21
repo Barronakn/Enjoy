@@ -1,0 +1,151 @@
+.section1 .link {
+  text-align: center;
+}
+
+.link a {
+  font-size: 20px;
+  border-bottom: 2px solid rgba(2, 2, 2, 0.2);
+  font-style: italic;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.link a:hover {
+  background: rgba(2, 2, 2, 0.2);
+  border-bottom: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.section-1 .link a {
+  border-bottom: 2px solid rgba(251, 1, 1, 0.2);
+}
+
+.section-1 .link a:hover {
+  background: rgba(251, 1, 1, 0.2);
+}
+
+.section-1 .right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-1 .right .span {
+  border-bottom: 1px solid;
+  width: 50px;
+  margin: 75px auto;
+  transform: rotate(90deg);
+}
+
+.section-2 {
+  background-color: rgba(232, 191, 191, 0.1);
+}
+
+.lateral {
+  border-bottom: 1px solid black;
+  width: 100px;
+}
+
+.section-4 .img {
+  max-width: 100%;
+  width: 600px;
+}
+
+.section-4 {
+  height: 402px;
+}
+
+.section-4 .link a {
+  border-bottom: 2px solid rgba(3, 105, 161, 0.2);
+}
+
+.section-4 .link a:hover {
+  background: rgba(3, 105, 161, 0.2);
+}
+
+//---------------------Responsivité---------------------
+
+@media screen and (max-width: 1024px) {
+  .section-4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .section-4 .left {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  .section-4 .right {
+    top: 0;
+    bottom: 0;
+  }
+
+  // .section-4 .right img {
+  //   width: 100%;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .section-1,
+  .section-1 .right,
+  .section-content-1,
+  .section-content-2,
+  .section-4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .section-1 .right .right-text {
+    text-align: center;
+  }
+
+  .section-2 .section-content-1 .right,
+  .section-4 .right {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-2 .section-content-2 {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .section-1 .right .right-text {
+    font-size: 25px;
+  }
+
+  .section-content-1 .left h1 {
+    font-size: 30px;
+  }
+  .parag {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .section-1 .right .link a {
+    font-size: 17px;
+  }
+}

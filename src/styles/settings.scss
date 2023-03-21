@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+body {
+  max-width: 1700px !important;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  background: #ededed;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #000;
+}

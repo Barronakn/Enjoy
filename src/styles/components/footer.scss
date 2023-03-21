@@ -1,0 +1,133 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer .left {
+  border-right: 1px solid rgb(147, 147, 147);
+}
+
+.footer .icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.footer .mail {
+  border-bottom: 1px solid rgb(147, 147, 147);
+  width: 400px;
+  background: none;
+}
+
+.footer .btn {
+  border: 1px solid white;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  margin-left: 15px;
+}
+
+.footer .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer .right a,
+.services a {
+  font-family: sans-serif;
+}
+
+.footer .right a:hover,
+.services a:hover {
+  text-decoration: underline;
+}
+
+.services {
+  border-bottom: 1px solid rgb(147, 147, 147);
+  color: rgb(228, 228, 228);
+}
+
+.services span {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.footer .link a {
+  border-bottom: 2px solid rgba(253, 252, 252, 0.2);
+}
+
+.footer .link a:hover {
+  background: rgba(253, 252, 252, 0.2);
+}
+
+//---------------------Responsivité---------------------
+
+@media screen and (max-width: 1186px) {
+  .footer .position {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .left {
+    border-right: 0px;
+    border-bottom: 1px solid rgb(147, 147, 147);
+    padding-right: 0;
+  }
+  .footer .right {
+    padding-left: 0;
+  }
+  .footer form {
+    display: flex;
+  }
+  .footer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .footer .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .footer-bottom p {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .services {
+    display: none;
+  }
+
+  .footer .left,
+  .footer .right {
+    width: 100%;
+  }
+
+  .footer .left {
+    border-bottom: 0;
+  }
+
+  .footer form {
+    flex-direction: column;
+  }
+
+  .footer form .mail {
+    width: 100%;
+  }
+
+  .footer form .btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 294px) {
+  .footer .footer-bottom .link a {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,40 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.intro h1 {
+  font-size: 45px;
+  line-height: 50px;
+  width: 60%;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 15px;
+  font-family: sans-serif;
+  width: 60%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.marker {
+  font-weight: bold;
+}
+
+//---------------------Responsivité---------------------
+
+@media screen and (max-width: 768px) {
+  .intro h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .intro h1 {
+    font-size: 25px;
+  }
+}
