@@ -23,7 +23,6 @@ const About = () => {
         <div className="left relative w-5/12 h-full">
           <img
             className="z-0"
-            data-aos="zoom-out"
             src="./PhotoInspiration-BenedicteDrummondCarolineSciammaLondon_4358_1.jpeg"
             alt=""
           />
@@ -61,7 +60,7 @@ const About = () => {
             </p>
           </div>
           <div className="right w-1/2 relative -top-24 right-0">
-            <img data-aos="zoom-out" src="./textpicture-2.png" alt="" />
+            <img src="./textpicture-2.png" alt="" />
           </div>
         </div>
         <div
@@ -115,10 +114,7 @@ const About = () => {
 
       <div className="section-3 relative h-32"></div>
 
-      <div
-        data-aos="fade-up"
-        className="section-4 bg-indigo-100	flex justify-around"
-      >
+      <div className="section-4 bg-indigo-100	flex justify-around">
         <div className="left h-full w-1/3">
           <h1 data-aos="fade-up" className="text-sky-700 py-10	text-4xl">
             Nos agences partenaires
@@ -137,12 +133,7 @@ const About = () => {
           </p>
         </div>
         <div className="right relative -top-32  -bottom-32">
-          <img
-            data-aos="zoom-out"
-            className="img"
-            src="./textpicture-3.png"
-            alt=""
-          />
+          <img className="img" src="./textpicture-3.png" alt="" />
         </div>
       </div>
     </div>
