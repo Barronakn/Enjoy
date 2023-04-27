@@ -196,11 +196,11 @@ const Navigation = () => {
           />
         </div>
         <div className="logo">
-          <NavLink className="pointer" to="/">
+          <NavLink className="pointer" to="/Enjoy">
             <img
               className="w-28 h-24 -mt-6"
               src={scrollPosition > 0 ? "logo-pink.svg" : "logo-white.svg"}
-              alt=""
+              alt="logo"
             />
           </NavLink>
         </div>

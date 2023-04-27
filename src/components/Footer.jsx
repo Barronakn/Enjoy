@@ -138,7 +138,7 @@ const Footer = () => {
 
       <div className="footer-bottom py-12 flex justify-around">
         <div className="logo h-full">
-          <NavLink className="pointer" to="/">
+          <NavLink className="pointer" to="/Enjoy">
             <img src={"./logo-white.svg"} alt="" />
           </NavLink>
         </div>
