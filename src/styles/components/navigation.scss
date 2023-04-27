@@ -1,3 +1,14 @@
+.menu .left::-webkit-scrollbar,
+.menu .right::-webkit-scrollbar {
+  width: 8px;
+  background-color: white;
+}
+
+.menu .left::-webkit-scrollbar-thumb,
+.menu .right::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
 .overlay {
   width: 100%;
   height: 100%;
@@ -9,9 +20,6 @@
 
 .pointer {
   cursor: pointer;
-}
-.nav {
-  column-gap: 450px;
 }
 
 video {
@@ -73,6 +81,7 @@ video {
     left: 0;
   }
 }
+
 @media screen and (max-width: 1260px) {
   .nav {
     column-gap: 0;
@@ -81,28 +90,37 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-  .nav .annonce {
-    margin-top: -30px;
-  }
   .nav .annonce a {
-    font-size: medium;
+    font-size: 15px;
   }
 
   .logo a img {
-    width: 50px;
-    height: 50px;
-    margin-top: -20px;
+    width: 5rem;
+    height: 5rem;
   }
 
   .navbar img {
     width: 35px;
     height: 35px;
-    margin-top: -30px;
   }
 
   .welcome h1 {
     font-size: 50px;
     line-height: 45px;
+  }
+
+  .menu .left ul li a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .welcome h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .nav {
+    justify-content: space-around;
   }
 }
 
@@ -110,9 +128,15 @@ video {
   .menu {
     flex-direction: column;
   }
-  .menu .left ul {
-    margin: 0 auto;
+
+  .menu .left {
+    padding-left: 2.5rem;
   }
+
+  .menu .left ul li a {
+    font-size: 25px;
+  }
+
   .menu .right {
     display: none;
   }
@@ -122,27 +146,28 @@ video {
   .nav {
     padding-left: 20px;
   }
+
   .nav .annonce {
-    width: 150px;
-  }
-  .nav .annonce a {
-    font-size: small;
+    width: auto;
   }
 
-  .menu .left ul li a {
-    font-size: 50px;
+  .nav .annonce a {
+    font-size: 13px;
   }
 
   .welcome h1 {
     font-size: 30px;
     line-height: 45px;
   }
-}
 
-@media screen and (max-width: 425px) {
+  .logo a img {
+    width: 55px;
+    height: 55px;
+    padding-top: 20px;
+  }
+
   .navbar img {
     width: 25px;
     height: 25px;
-    margin-top: -18px;
   }
 }

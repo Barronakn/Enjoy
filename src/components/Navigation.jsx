@@ -28,6 +28,7 @@ const Navigation = () => {
 
   const navbarStyle = {
     backgroundColor: scrollPosition > 0 ? "white" : "transparent",
+    boxShadow: scrollPosition > 0 ? "2px 0px 2px gray" : "none",
   };
 
   const colorStyle = {
@@ -71,9 +72,7 @@ const Navigation = () => {
 
   const handleLeave = () => {
     const sousLink = document.querySelector(".menu .left ul .souslink");
-    setTimeout(function () {
-      sousLink.style.display = "none";
-    }, 10000);
+    sousLink.style.display = "none";
   };
 
   //Reset logo
@@ -89,10 +88,10 @@ const Navigation = () => {
   return (
     <div className="main">
       <div className="overlay"></div>
-      <video className="z-0" src={videoBg} autoPlay loop muted />
+      <video className="z-0" src={videoBg} autoPlay loop muted loading="lazy" />
       {show ? (
         <div className="menu w-screen fixed h-screen top-0 z-50 flex">
-          <div className="left flex w-full h-full bg-white overflow-x-hidden overflow-y-auto">
+          <div className="left flex w-full h-full bg-white overflow-x-hidden overflow-y-auto pl-20">
             <img
               onMouseEnter={handleEnterReset}
               onMouseLeave={handleLeaveReset}
@@ -100,55 +99,62 @@ const Navigation = () => {
                 setShow(false);
                 body.style.overflowY = "scroll";
               }}
-              className="w-10 cursor-pointer h-10"
+              className="fixed w-10 cursor-pointer h-10"
               src={reset}
-              alt=""
+              alt="reset"
             />
-            <ul>
+            <ul className="flex flex-col gap-14 mt-8">
               <li>
-                <NavLink className="text-8xl" to="#">
-                  Left1
+                <NavLink className="text-4xl" to="#">
+                  <sup className="text-sm">0.1</sup>Les annonces d’Enjoy
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="link text-4xl" to="#">
+                  <sup className="text-sm">0.2</sup>Consulter les magazines
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   onMouseEnter={handleEnter}
                   onMouseLeave={handleLeave}
-                  className="link text-8xl"
+                  className="text-4xl"
                   to="#"
                 >
-                  Left2
+                  <sup className="text-sm">0.3</sup>Communiquez avec Enjoy
                 </NavLink>
                 <ul className="souslink h-full flex flex-col">
                   <li>
-                    <NavLink to="#">SousLink1</NavLink>
+                    <NavLink className="text-lg hover:italic" to="#">
+                      Réservez votre page d’annonce immobilière
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="#">SousLink2</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="#">SousLink3</NavLink>
+                    <NavLink className="text-lg hover:italic" to="#">
+                      Nos supports de communication
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <NavLink className="text-8xl" to="#">
-                  Left3
+                <NavLink className="text-4xl" to="#">
+                  <sup className="text-sm">0.4</sup>Enjoy Immobilier
                 </NavLink>
               </li>
               <li>
-                <NavLink className="text-8xl" to="#">
-                  Left4
+                <NavLink className="text-4xl" to="#">
+                  <sup className="text-sm">0.5</sup>Nos agences partenaires
                 </NavLink>
               </li>
               <li>
-                <NavLink className="text-8xl" to="#">
-                  Left5
+                <NavLink className="text-4xl" to="#">
+                  <sup className="text-sm">0.6</sup> Où fait-il bon vivre avec
+                  Enjoy ?
                 </NavLink>
               </li>
               <li>
-                <NavLink className="text-8xl" to="#">
-                  Left6
+                <NavLink className="text-4xl" to="#">
+                  <sup className="text-sm">0.7</sup> Contact
                 </NavLink>
               </li>
             </ul>
@@ -170,7 +176,7 @@ const Navigation = () => {
       ) : null}
       <div
         style={navbarStyle}
-        className="flex w-full justify-center items-center nav z-30 fixed top-0 pt-5"
+        className="nav flex w-full justify-around z-30 fixed top-0 pt-5"
       >
         <div className="navbar">
           <img
@@ -189,10 +195,10 @@ const Navigation = () => {
             alt=""
           />
         </div>
-        <div className="logo h-full">
+        <div className="logo">
           <NavLink className="pointer" to="/">
             <img
-              className="w-28 h-20"
+              className="w-28 h-24 -mt-6"
               src={scrollPosition > 0 ? "logo-pink.svg" : "logo-white.svg"}
               alt=""
             />

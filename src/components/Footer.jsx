@@ -18,7 +18,11 @@ const Footer = () => {
               placeholder="votreadresse@mail.com"
               id=""
             />
-            <input type="submit" className="text-gray-400 btn" value="OK" />
+            <input
+              type="submit"
+              className="text-gray-400 btn cursor-pointer"
+              value="OK"
+            />
           </form>
           <div className="icon mt-8 flex">
             <NavLink to="#">
@@ -82,12 +86,24 @@ const Footer = () => {
         </div>
 
         <div className="right w-1/2 pl-20 py-16 flex font-bold flex-col">
-          <NavLink className="py-2" to="#">Les annonces d’Enjoy</NavLink>
-          <NavLink className="py-2" to="#">Communiquez avec Enjoy</NavLink>
-          <NavLink className="py-2" to="#">Nos agences partenaires</NavLink>
-          <NavLink className="py-2" to="#">Enjoy Immobilier</NavLink>
-          <NavLink className="py-2" to="#">Contact</NavLink>
-          <NavLink className="py-2" to="#">Mentions légales</NavLink>
+          <NavLink className="py-2" to="#">
+            Les annonces d’Enjoy
+          </NavLink>
+          <NavLink className="py-2" to="#">
+            Communiquez avec Enjoy
+          </NavLink>
+          <NavLink className="py-2" to="#">
+            Nos agences partenaires
+          </NavLink>
+          <NavLink className="py-2" to="#">
+            Enjoy Immobilier
+          </NavLink>
+          <NavLink className="py-2" to="#">
+            Contact
+          </NavLink>
+          <NavLink className="py-2" to="#">
+            Mentions légales
+          </NavLink>
         </div>
       </div>
 

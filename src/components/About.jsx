@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+    <div className="about">
       <h1
         data-aos="fade-up"
         className="link py-3 my-8 text-center text-gray-600"
@@ -22,9 +22,11 @@ const About = () => {
       <div className="section-1 pb-40 mt-32 flex justify-evenly text-4xl">
         <div className="left relative w-5/12 h-full">
           <img
+            data-aos="zoom-in"
             className="z-0"
             src="./PhotoInspiration-BenedicteDrummondCarolineSciammaLondon_4358_1.jpeg"
             alt=""
+            loading="lazy"
           />
         </div>
         <div className="right">
@@ -41,7 +43,7 @@ const About = () => {
 
       <div className="section-2 px-10 relative">
         <div className="section-content-1 flex justify-around">
-          <div className="left  text-left w-5/12">
+          <div className="left text-left w-5/12">
             <h1 data-aos="fade-up" className="text-5xl py-6">
               Communiquez avec Enjoy
             </h1>
@@ -59,8 +61,13 @@ const About = () => {
               pour faire rayonner votre agence immobilière et ses biens.
             </p>
           </div>
-          <div className="right w-1/2 relative -top-24 right-0">
-            <img src="./textpicture-2.png" alt="" />
+          <div className="right relative -top-24 right-0">
+            <img
+              data-aos="zoom-in"
+              src="./textpicture-2.png"
+              alt=""
+              loading="lazy"
+            />
           </div>
         </div>
         <div
@@ -132,8 +139,14 @@ const About = () => {
             <NavLink to="#">J’en profite !</NavLink>
           </p>
         </div>
-        <div className="right relative -top-32  -bottom-32">
-          <img className="img" src="./textpicture-3.png" alt="" />
+        <div className="right relative -top-32 -bottom-32">
+          <img
+            data-aos="zoom-in"
+            className="img"
+            src="./textpicture-3.png"
+            alt=""
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

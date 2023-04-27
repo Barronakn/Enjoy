@@ -2,10 +2,14 @@ const Load = () => {
   return (
     <div className="load h-screen bg-black flex flex-col justify-center items-center">
       <div>
-        <img src="./logo-white.svg" alt="" />
+        <img
+          className="w-full h-full max-w-full"
+          src="./logo_white.svg"
+          alt="logoLoad"
+        />
       </div>
       <div>
-        <img src="./loader.gif" alt="" />
+        <img className="w-20 h-20" src="./loader.gif" alt="" />
       </div>
     </div>
   );
